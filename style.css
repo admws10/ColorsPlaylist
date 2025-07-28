@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#search {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+#album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.album-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.album-card:hover {
+  transform: translateY(-4px);
+}
+
+.album-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  gap: 4px;
+}
+
+.color-block {
+  flex: 1 1 20%;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.album-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.album-title {
+  font-weight: 600;
+  margin: 0.5rem 0 0;
+}
+
+.album-artist {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.album-info a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #1DB954;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.album-info a:hover {
+  text-decoration: underline;
+}
